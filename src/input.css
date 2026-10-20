@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #0057f2;
+  --color-ink: #141414;
+  --font-sans: "gotham", ui-sans-serif, sans-serif;
+}
+
+.gotham-book {
+  font-family: "gotham", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gotham-medium {
+  font-family: "gotham", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gotham-bold {
+  font-family: "gotham", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    background: #000814;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .heading-lg {
+    font-family: "gotham", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(2.85rem, 5vw, 6.1rem);
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  .heading-sm {
+    font-family: "gotham", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(1.25rem, 1.6vw, 1.75rem);
+    line-height: 1.25;
+  }
+
+  .text-body {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .text-lead {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+    line-height: 1.4;
+  }
+
+  .nav-link {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1;
+    color: #fff;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-link:hover {
+    opacity: 0.75;
+  }
+
+  .menu-link {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.35;
+    color: #e6e6e6;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  .menu-link:hover {
+    color: #fff;
+  }
+
+  .btn {
+    font-family: "gotham", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-primary {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(224, 221, 221, 0.01) 0%,
+      #0057f2 100%
+    );
+    color: #fff;
+  }
+  
+  .btn-primary::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0057f2;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+  
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+  .btn-light {
+    background: #fff;
+    color: #1a1a1a;
+  }
+
+  .btn-light:hover {
+    background: #d3d1d1;
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .assess-bar {
+    background-image: linear-gradient(90deg, #000000 0%, #010714 20%, #02163d 42%, #003ec4 64%, #0057f2 82%, #0062ff 100%);
+  }
+
+  .btn-nav {
+    padding: 0.8rem 1.75rem;
+    font-size: 0.95rem;
+  }
+
+  .btn-hero {
+    min-width: 10.4rem;
+    padding: 1.12rem 1.85rem;
+    font-size: 1.02rem;
+  }
+
+  .nav-shade {
+    pointer-events: none;
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 20;
+    height: 6rem;
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.5) 46%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .mission-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: #000;
+    padding: 1.75rem 1.45rem 2rem;
+  }
+
+  .site-footer {
+    background: linear-gradient(180deg, #1a1a1a 0%, #121212 45%, #0d0d0d 100%);
+    color: #fff;
+  }
+
+  .menu-panel {
+    width: max-content;
+    min-width: 16.5rem;
+    border-radius: 1.15rem;
+    background: #121212;
+    padding: 1.15rem 1.45rem 1.2rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  }
+}
