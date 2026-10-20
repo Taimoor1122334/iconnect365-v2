@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <header class="absolute inset-x-0 top-0 z-30">
-        <div class="relative flex items-center px-[7.4vw] py-6 lg:py-7">
+    <header id="site-header" class="site-header">
+        <div class="relative flex items-center px-5 py-5 sm:px-8 lg:px-[7.4vw] lg:py-7">
             <a href="#" class="relative z-10 shrink-0">
                 <img src="assets/images/iCONNECT365%20Logo%202026%202.svg" alt="iConnect365" class="h-[clamp(2rem,3.4vw,2.6rem)] w-auto">
             </a>
@@ -39,7 +39,7 @@
             <button id="nav-toggle" class="btn btn-primary btn-nav ml-auto lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
         </div>
 
-        <div id="mobile-nav" class="hidden border-t border-white/10 bg-[#070d18]/95 px-[7.4vw] py-5 lg:hidden">
+        <div id="mobile-nav" class="hidden border-t border-white/10 bg-[#070d18]/95 px-5 py-5 sm:px-8 lg:hidden">
             <nav class="flex flex-col gap-4" aria-label="Mobile">
                 <a href="#" class="nav-link">Home</a>
                 <a href="#" class="nav-link">About</a>
@@ -55,32 +55,32 @@
         </div>
     </header>
 
-    <section class="relative min-h-[120vh] overflow-hidden">
-        <img src="assets/images/Collaborative Business Meeting in Modern Office (1).png" alt="" class="pointer-events-none absolute inset-0 h-full w-full origin-[74%_42%] scale-[1.12] object-cover object-[70%_58%]">
+    <section class="relative overflow-hidden lg:min-h-[120vh]">
+        <img src="assets/images/Collaborative Business Meeting in Modern Office (1).png" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center lg:origin-[74%_42%] lg:scale-[1.08] lg:object-[70%_58%]">
         <div class="nav-shade"></div>
-        <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(1,8,24,0.28)_0%,rgba(1,12,32,0.08)_28%,rgba(1,12,32,0)_50%)]"></div>
+        <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(1,8,24,0.72)_0%,rgba(1,12,32,0.4)_46%,rgba(1,12,32,0.08)_100%)] lg:bg-[linear-gradient(90deg,rgba(1,8,24,0.28)_0%,rgba(1,12,32,0.08)_28%,rgba(1,12,32,0)_50%)]"></div>
 
-        <div class="relative z-10 w-full px-[7.4vw] pt-[36vh] pb-[18vh]">
+        <div class="relative z-10 w-full px-5 pt-28 pb-14 sm:px-8 lg:px-[7.4vw] lg:pt-[36vh] lg:pb-[18vh]">
             <h1 class="heading-lg text-white">
                 <span class="block">Build.</span>
                 <span class="block">Automate.</span>
                 <span class="block">Secure.</span>
                 <span class="block text-brand italic">Scale.</span>
             </h1>
-            <p class="text-lead mt-4 text-white">Connecting Businesses Through Intelligent Technology.</p>
-            <div class="mt-8 flex flex-wrap items-center gap-4">
+            <p class="text-lead mt-3 text-white">Connecting Businesses Through Intelligent Technology.</p>
+            <div class="mt-6 flex flex-wrap items-center gap-3">
                 <a href="#" class="btn btn-light btn-hero">Get Started</a>
                 <a href="#" class="btn btn-primary btn-hero">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section class="bg-black px-[7.4vw] pt-[18vh] pb-[18vh] text-white">
+    <section class="bg-black px-5 py-14 text-white sm:px-8 lg:px-[7.4vw] lg:py-[18vh]">
         <h2 class="heading-lg text-[clamp(2.15rem,3.6vw,4.35rem)]">
             Built for every <span class="text-brand">Mission</span>
         </h2>
 
-        <div class="mt-[clamp(2.75rem,6vh,4.75rem)] grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mt-[clamp(2.75rem,6vh,4.75rem)] xl:grid-cols-4">
             <article class="mission-card">
                 <h3 class="heading-sm text-[0.92rem] uppercase tracking-[0.03em]">For growing businesses</h3>
                 <img src="assets/images/right-arrow.svg" alt="" class="mt-6 h-14 w-14">
@@ -139,20 +139,20 @@
         </div>
     </section>
 
-    <section class="relative min-h-[130vh] overflow-hidden">
-        <img src="assets/images/Futuristic Blue Cube Network.png" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover">
-        <div class="pointer-events-none absolute inset-0 "></div>
+    <section class="relative overflow-hidden lg:min-h-[130vh]">
+        <img src="assets/images/Futuristic Blue Cube Network.png" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-[70%_center]">
+        <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(1,8,20,0.82)_0%,rgba(1,8,20,0.45)_42%,rgba(1,8,20,0.05)_100%)]"></div>
 
-        <div class="relative z-10 flex min-h-[120vh] flex-col justify-center px-[7.4vw] py-20">
+        <div class="relative z-10 flex flex-col justify-center px-5 py-14 sm:px-8 lg:min-h-[120vh] lg:px-[7.4vw] lg:py-20">
             <div class="max-w-[33rem]">
-                <h2 class="heading-lg normal-case text-[clamp(2.05rem,3.15vw,3.45rem)] leading-[1.18]">
+                <h2 class="heading-lg normal-case text-[clamp(1.85rem,3.15vw,3.45rem)] leading-[1.18]">
                     Technology shouldn’t feel like a collection of disconnected tools.
                 </h2>
-                <p class="heading-lg normal-case mt-10 text-[clamp(2.05rem,3.15vw,3.45rem)] leading-[1.18]">
+                <p class="heading-lg normal-case mt-6 text-[clamp(1.85rem,3.15vw,3.45rem)] leading-[1.18] lg:mt-10">
                     It should work <span class="text-brand italic">together.</span>
                 </p>
-                <a href="#" class="btn btn-primary btn-hero mt-10">Get Started</a>
-                <p class="text-body mt-16 max-w-[26rem] text-sm leading-relaxed text-white/90">
+                <a href="#" class="btn btn-primary btn-hero mt-7 lg:mt-10">Get Started</a>
+                <p class="text-body mt-8 max-w-[26rem] text-sm leading-relaxed text-white/90 lg:mt-16">
                     At iCONNECT365, every solution is designed to connect. Websites, applications, AI, Microsoft, cybersecurity, accounting technology, and customer success systems all working together through one trusted technology partner – so your organization can focus on growth instead of complexity.
                 </p>
             </div>
@@ -160,16 +160,17 @@
     </section>
 
     <section id="assessment" class="assess-bar">
-        <div class="flex flex-col items-start justify-between gap-5 px-[7.4vw] py-8 md:flex-row md:items-center">
-            <h2 class="heading-sm text-[clamp(1.4rem,1.9vw,2.6rem)] leading-none uppercase tracking-[0.02em]">Get your free technology assessment today!</h2>
-            <a href="#" class="btn btn-outline shrink-0 px-8 py-4 text-[1.2rem]">Take The Assessment</a>
+        <div class="flex flex-col items-start justify-between gap-4 px-5 py-5 sm:px-8 md:flex-row md:items-center lg:px-[7.4vw] lg:py-8">
+            <h2 class="heading-sm text-[clamp(1.05rem,1.9vw,2.6rem)] leading-tight uppercase tracking-[0.02em]">Get your free technology assessment today!</h2>
+            <a href="#" class="btn btn-outline shrink-0 px-6 py-3 text-base lg:px-8 lg:py-4 lg:text-[1.2rem]">Take The Assessment</a>
         </div>
     </section>
 
-    <section class="relative min-h-[120vh] overflow-hidden">
-        <img src="assets/images/Confident Speaker on a Blue-Lit Stage.png" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-[18%_center]">
-        <div class="relative z-10 flex min-h-[78vh] items-center justify-end px-[7.4vw] py-16">
-            <blockquote class="max-w-[40rem] text-white">
+    <section class="relative min-h-[64vh] overflow-hidden lg:min-h-[120vh]">
+        <img src="assets/images/Confident Speaker on a Blue-Lit Stage.png" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-[center_20%] lg:object-[18%_center]">
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent lg:bg-gradient-to-l lg:from-black/55 lg:via-black/10 lg:to-transparent"></div>
+        <div class="relative z-10 flex min-h-[64vh] items-end px-5 py-10 sm:px-8 lg:min-h-[78vh] lg:items-center lg:justify-end lg:px-[7.4vw] lg:py-16">
+            <blockquote class="w-full max-w-[40rem] text-white">
                 <p class="text-lead text-[clamp(1.15rem,1.65vw,1.55rem)] leading-snug">
                     “<span class="gotham-bold">iCONNECT365</span> has helped us simplify our technology and create a more connected experience for our congregation. Their team understands the unique needs of ministry and makes technology feel less complicated, allowing us to focus more on serving people and advancing our mission.”
                 </p>
@@ -181,14 +182,14 @@
         </div>
     </section>
 
-    <section class="bg-black px-[7.4vw] py-[18vh] text-center text-white">
-        <h2 class="heading-lg normal-case text-[clamp(2.6rem,4.2vw,4.5rem)] leading-none">Let’s Get Started</h2>
-        <p class="text-body mx-auto mt-4 max-w-3xl text-[0.8rem]">Click the button below and let’s get your project started TODAY!</p>
+    <section class="bg-black px-5 py-14 text-center text-white sm:px-8 lg:px-[7.4vw] lg:py-[18vh]">
+        <h2 class="heading-lg normal-case text-[clamp(2.1rem,4.2vw,4.5rem)] leading-none">Let’s Get Started</h2>
+        <p class="text-body mx-auto mt-4 max-w-3xl text-sm md:text-base">Click the button below and let’s get your project started TODAY!</p>
         <a href="#" class="btn btn-primary btn-hero mt-8">Get Started</a>
     </section>
 
     <footer class="site-footer border-t border-white/10">
-        <div class="px-[7.4vw] pt-16 pb-12">
+        <div class="px-5 pt-12 pb-10 sm:px-8 lg:px-[7.4vw] lg:pt-16 lg:pb-12">
             <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_0.8fr_0.9fr_1.1fr] lg:gap-10">
                 <div>
                     <h2 class="heading-sm text-[0.95rem] uppercase tracking-[0.04em]">About us</h2>
@@ -224,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="mt-24 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div class="mt-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between lg:mt-24">
                 <div class="text-body text-sm leading-7">
                     <a href="#" class="nav-link block text-sm">Privacy Policy</a>
                     <a href="#" class="nav-link block text-sm">Terms of Use</a>
@@ -234,13 +235,6 @@
         </div>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector("#nav-toggle");
-        const mobileNav = document.querySelector("#mobile-nav");
-        navToggle.addEventListener("click", () => {
-            const open = mobileNav.classList.toggle("hidden") === false;
-            navToggle.setAttribute("aria-expanded", open ? "true" : "false");
-        });
-    </script>
+    <script src="./src/script.js"></script>
 </body>
 </html>

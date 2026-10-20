@@ -34,6 +34,7 @@
 
   body {
     margin: 0;
+    overflow-x: hidden;
     background: #000814;
     color: #fff;
   }
@@ -44,7 +45,7 @@
     font-family: "gotham", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: clamp(2.85rem, 5vw, 6.1rem);
+    font-size: clamp(2.15rem, 4.8vw, 5.75rem);
     line-height: 1.06;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -96,12 +97,18 @@
     font-size: 0.92rem;
     line-height: 1.35;
     color: #e6e6e6;
-    white-space: nowrap;
+    white-space: normal;
     transition: color 0.2s ease;
   }
 
   .menu-link:hover {
     color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    .menu-link {
+      white-space: nowrap;
+    }
   }
 
   .btn {
@@ -172,9 +179,29 @@
   }
 
   .btn-hero {
-    min-width: 10.4rem;
-    padding: 1.12rem 1.85rem;
-    font-size: 1.02rem;
+    min-width: 9rem;
+    padding: 0.9rem 1.35rem;
+    font-size: 0.95rem;
+  }
+
+  @media (min-width: 768px) {
+    .btn-hero {
+      min-width: 10.4rem;
+      padding: 1.12rem 1.85rem;
+      font-size: 1.02rem;
+    }
+  }
+
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 30;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .site-header.is-stuck {
+    background: rgba(5, 10, 22, 0.94);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
   .nav-shade {
